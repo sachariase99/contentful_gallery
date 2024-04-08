@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes fill {
+  0% { stroke-dashoffset: 314.16; }
+  100% { stroke-dashoffset: 0; }
+}
