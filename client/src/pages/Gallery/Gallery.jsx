@@ -40,9 +40,8 @@ const Gallery = () => {
       <div className="grid grid-cols-3 gap-4">
         {restImages.map((item, index) => {
           return (
-            <div onClick={() => openModal(index)}>
+            <div key={index} onClick={() => openModal(index)}>
               <ImageCard
-                key={index}
                 url={item.fields.image.fields.file.url}
                 alt={item.fields.title}
                 title={item.fields.title}

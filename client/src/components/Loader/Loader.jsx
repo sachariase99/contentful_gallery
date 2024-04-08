@@ -19,12 +19,7 @@ const Loader = ({ loadingTime = 1500, intervalTime = 10 }) => {
   }, [loadingTime, intervalTime]);
 
   return (
-    <div style={{
-      display: 'flex',
-      justifyContent: 'center',
-      alignItems: 'center',
-      height: '100vh'
-    }}>
+    <div className="flex justify-center items-center h-[100vh]">
       <svg width="120" height="120">
         <circle cx="60" cy="60" r="50" fill="none" stroke="#f3f3f3" strokeWidth="10" />
         <circle cx="60" cy="60" r="50" fill="none" stroke="#3498db" strokeWidth="10" strokeDasharray="314.16" strokeDashoffset={`${314.16 * (1 - loadingProgress / 100)}`} />
